@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1740615738 source:d:\code game cho cac con vo choi\filecodegame\main.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	<iostream>
+
