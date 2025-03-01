@@ -86,56 +86,7 @@ void close() {
 }
 
 int main(int argc, char* argv[]) {
-    if (!init()) {
-        std::cerr << "Failed to initialize!" << std::endl;
-        return -1;
-    }
-
-    if (!loadMedia()) {
-        std::cerr << "Failed to load media!" << std::endl;
-        return -1;
-    }
-
-    bool quit = false;
-    SDL_Event e;
-
-    int playerX = 0;
-    int playerY = 0;
-
-    while (!quit) {
-        while (SDL_PollEvent(&e) != 0) {
-            if (e.type == SDL_QUIT) {
-                quit = true;
-            } else if (e.type == SDL_KEYDOWN) {
-                switch (e.key.keysym.sym) {
-                    case SDLK_UP:
-                        playerY -= 10;
-                        break;
-                    case SDLK_DOWN:
-                        playerY += 10;
-                        break;
-                    case SDLK_LEFT:
-                        playerX -= 10;
-                        break;
-                    case SDLK_RIGHT:
-                        playerX += 10;
-                        break;
-                    case SDLK_SPACE:
-                        Mix_PlayChannel(-1, soundEffect, 0);
-                        break;
-                }
-            }
-        }
-
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
-        SDL_RenderClear(renderer);
-
-        SDL_Rect playerRect = {playerX, playerY, 64, 64};
-        SDL_RenderCopy(renderer, playerTexture, nullptr, &playerRect);
-
-        SDL_RenderPresent(renderer);
-    }
-
-    close();
+    std::cout << "hello";
+    std::cout << "ngu roi";
     return 0;
 }
