@@ -32,6 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Linker>
+			<Add library="SDL2" />
+			<Add library="SDL2_ttf" />
+		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
