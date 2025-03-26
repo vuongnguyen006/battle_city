@@ -6,14 +6,23 @@
 	<cstdlib>
 	<ctime>
 
-1742311527 source:/home/vuongnguyen/Dev/battle_city/filecodegame/main.cpp
+1742805763 source:/home/vuongnguyen/Dev/battle_city/filecodegame/main.cpp
 	<SDL.h>
 	<SDL_ttf.h>
+	<SDL_image.h>
 	<vector>
 	<iostream>
 	<algorithm>
 	<cstdlib>
 	<ctime>
+	<string>
+	<fstream>
+	"Wall.h"
+	"Constants.h"
+	"Bullet.h"
+	"EnemyTanks.h"
+	"Tank.h"
+	"Game.h"
 
 1712474203 /usr/include/SDL2/SDL.h
 	"SDL_main.h"
@@ -410,4 +419,68 @@
 	"SDL.h"
 	"begin_code.h"
 	"close_code.h"
+
+1711871873 /usr/include/SDL2/SDL_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1742872129 /home/vuongnguyen/Dev/battle_city/filecodegame/Wall.h
+	<SDL.h>
+	"Constants.h"
+
+1742913517 /home/vuongnguyen/Dev/battle_city/filecodegame/Constants.h
+
+1742962364 source:/home/vuongnguyen/Dev/battle_city/filecodegame/Wall.cpp
+	"Wall.h"
+	<iostream>
+	<SDL_image.h>
+
+1742890408 source:/home/vuongnguyen/Dev/battle_city/filecodegame/Bullet.cpp
+	"Bullet.h"
+
+1742805773 /home/vuongnguyen/Dev/battle_city/filecodegame/Bullet.h
+	<SDL.h>
+	"Constants.h"
+
+1742807109 /home/vuongnguyen/Dev/battle_city/filecodegame/EnemyTanks.h
+	<SDL.h>
+	<vector>
+	"Bullet.h"
+	"Wall.h"
+	"Constants.h"
+
+1742805273 /home/vuongnguyen/Dev/battle_city/filecodegame/Tank.h
+	<SDL.h>
+	<vector>
+	"Bullet.h"
+	"Wall.h"
+	"Constants.h"
+
+1742871387 /home/vuongnguyen/Dev/battle_city/filecodegame/Game.h
+	<SDL.h>
+	<SDL_ttf.h>
+	<SDL_image.h>
+	<vector>
+	<string>
+	"Wall.h"
+	"Bullet.h"
+	"Tank.h"
+	"EnemyTanks.h"
+	"Constants.h"
+
+1742872056 source:/home/vuongnguyen/Dev/battle_city/filecodegame/Tank.cpp
+	"Tank.h"
+
+1742878480 source:/home/vuongnguyen/Dev/battle_city/filecodegame/EnemyTanks.cpp
+	"EnemyTanks.h"
+	<cstdlib>
+	<algorithm>
+
+1742962709 source:/home/vuongnguyen/Dev/battle_city/filecodegame/Game.cpp
+	"Game.h"
+	<iostream>
+	<fstream>
+	<algorithm>
 

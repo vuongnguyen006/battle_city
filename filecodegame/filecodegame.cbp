@@ -36,6 +36,17 @@
 			<Add library="SDL2" />
 			<Add library="SDL2_ttf" />
 		</Linker>
+		<Unit filename="Bullet.cpp" />
+		<Unit filename="Bullet.h" />
+		<Unit filename="Constants.h" />
+		<Unit filename="EnemyTanks.cpp" />
+		<Unit filename="EnemyTanks.h" />
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.h" />
+		<Unit filename="Tank.cpp" />
+		<Unit filename="Tank.h" />
+		<Unit filename="Wall.cpp" />
+		<Unit filename="Wall.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
