@@ -1,6 +1,7 @@
 #include <SDL.h>
 #include <SDL_ttf.h>
 #include <SDL_image.h>
+#include <SDL_mixer.h>
 #include <vector>
 #include <iostream>
 #include <algorithm>
@@ -14,8 +15,6 @@
 #include "EnemyTanks.h"
 #include "Tank.h"
 #include "Game.h"
-
-using namespace std;
 
 int main(int argc, char* argv[]) {
     srand(time(0));

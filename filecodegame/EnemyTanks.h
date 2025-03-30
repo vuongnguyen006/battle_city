@@ -6,6 +6,9 @@
 #include "Bullet.h"
 #include "Wall.h"
 #include "Constants.h"
+#include "Tank.h"
+
+class Game;
 
 class EnemyTank {
 public:
@@ -18,11 +21,11 @@ public:
     bool active;
     SDL_Texture* tanks;
     int direction;
-    int explosionFrame;
-    int explosionCounter;
+    int explodeFrame;
     bool exploding;
+    Game* game;
 
-    EnemyTank(int startX, int startY, SDL_Texture* texture);
+    EnemyTank(int startX, int startY, SDL_Texture* texture, Game* gamePtr);
     void changeDirection();
     void shoot();
     void update(const std::vector<Wall>& walls);

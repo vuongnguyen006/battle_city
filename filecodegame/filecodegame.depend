@@ -484,3 +484,81 @@
 	<fstream>
 	<algorithm>
 
+1743328265 source:c:\users\vuong\dev\battle_city\battle_city\filecodegame\bullet.cpp
+	"Bullet.h"
+	"Constants.h"
+
+1743328295 c:\users\vuong\dev\battle_city\battle_city\filecodegame\bullet.h
+	<SDL.h>
+
+1743328345 c:\users\vuong\dev\battle_city\battle_city\filecodegame\constants.h
+
+1743328366 source:c:\users\vuong\dev\battle_city\battle_city\filecodegame\enemytanks.cpp
+	"EnemyTanks.h"
+	"Wall.h"
+	"Game.h"
+	<SDL.h>
+	<cstdlib>
+	<algorithm>
+
+1743328390 c:\users\vuong\dev\battle_city\battle_city\filecodegame\enemytanks.h
+	<SDL.h>
+	<vector>
+	"Bullet.h"
+	"Wall.h"
+	"Constants.h"
+	"Tank.h"
+
+1743328618 c:\users\vuong\dev\battle_city\battle_city\filecodegame\wall.h
+	<SDL.h>
+	"Constants.h"
+
+1743328575 c:\users\vuong\dev\battle_city\battle_city\filecodegame\tank.h
+	<SDL.h>
+	<vector>
+	"Bullet.h"
+	"Wall.h"
+	"Constants.h"
+
+1743328753 c:\users\vuong\dev\battle_city\battle_city\filecodegame\game.h
+	<SDL.h>
+	<SDL_ttf.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<vector>
+	<string>
+	"Wall.h"
+	"Bullet.h"
+	"Tank.h"
+	"EnemyTanks.h"
+	"Constants.h"
+
+1743328480 source:c:\users\vuong\dev\battle_city\battle_city\filecodegame\main.cpp
+	<SDL.h>
+	<SDL_ttf.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<vector>
+	<iostream>
+	<algorithm>
+	<cstdlib>
+	<ctime>
+	<string>
+	<fstream>
+	"Wall.h"
+	"Constants.h"
+	"Bullet.h"
+	"EnemyTanks.h"
+	"Tank.h"
+	"Game.h"
+
+1743328753 source:c:\users\vuong\dev\battle_city\battle_city\filecodegame\tank.cpp
+	"Tank.h"
+	"Game.h"
+	<algorithm>
+
+1743328598 source:c:\users\vuong\dev\battle_city\battle_city\filecodegame\wall.cpp
+	"Wall.h"
+	<iostream>
+	<SDL_image.h>
+

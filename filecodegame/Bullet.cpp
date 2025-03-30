@@ -1,30 +1,25 @@
-
 #include "Bullet.h"
+#include "Constants.h"
 
-Bullet::Bullet(int startX, int startY, int dX, int dY) {
+Bullet::Bullet(int startX, int startY, int dirX, int dirY) {
     x = startX;
     y = startY;
-    dirX = dX;
-    dirY = dY;
+    dx = dirX * 5;
+    dy = dirY * 5;
+    rect = { x, y, 4, 4};  // Cỡ viên đạn
     active = true;
-    rect = {x, y, 10, 10};
 }
 
 void Bullet::update() {
-    if (active) {
-        x += dirX * 5;
-        y += dirY * 5;
-        rect.x = x;
-        rect.y = y;
-    }
-    if (x < 0 || x > SCREEN_WIDTH || y < 0 || y > SCREEN_HEIGHT) {
-        active = false;
-    }
+    x += dx;
+    y += dy;
+    rect.x = x;
+    rect.y = y;
+
+    if (x < 0 || x > SCREEN_WIDTH || y < 0 || y > SCREEN_HEIGHT) active = false;
 }
 
 void Bullet::render(SDL_Renderer* renderer) {
-    if (active) {
-        SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-        SDL_RenderFillRect(renderer, &rect);
-    }
+    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); // Màu trắng
+    SDL_RenderFillRect(renderer, &rect);
 }
